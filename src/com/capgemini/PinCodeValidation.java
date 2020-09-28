@@ -8,7 +8,7 @@ public class PinCodeValidation {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Pattern pattern = Pattern.compile("^(!([a-zA-Z][^W]))*[0-9]{6}(!([a-zA-Z][^W]))*$");
+		Pattern pattern = Pattern.compile("^(!([a-zA-Z][^W]))*[0-9]{3}\s*{0,1}[0-9]{3}(!([a-zA-Z][^W]))*$");
 		while (true) {
 			System.out.println("Do you want to enter Pincode: \nselect \n1.yes\n2.no");
 			int option = Integer.parseInt(sc.nextLine());
